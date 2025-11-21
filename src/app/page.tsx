@@ -35,7 +35,7 @@ const itemVariants = {
       damping: 10,
     },
   },
-};
+} as const;
 
 const textRevealVariants = {
   hidden: { width: 0, opacity: 0 },
