@@ -20,12 +20,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       className="bg-gray-800 rounded-xl shadow-xl overflow-hidden flex flex-col h-full hover:shadow-indigo-500/30 transition duration-300 border border-gray-700 hover:border-indigo-600"
       whileHover={{ y: -5 }} // Subtle lift on hover
     >
-      {/* Project Image Placeholder */}
+      {/* Project Image */}
       <div className="relative h-48 w-full bg-gray-700/50">
-        {/* Replace with your actual Image component later */}
-        <p className="p-4 text-center text-gray-400">
-            [Image Placeholder for: {project.title}]
-        </p>
+        <Image 
+          src={project.imagePath} 
+          alt={project.title} 
+          fill 
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
 
       <div className="p-5 flex flex-col flex-grow">

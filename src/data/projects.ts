@@ -18,7 +18,7 @@ export const projectsData: Project[] = [
     title: "Eco-Synapse Smart Grid Dashboard",
     description:
       "A real-time data visualization dashboard for residential solar PV systems, built for efficiency monitoring and predictive maintenance.",
-    imagePath: "/image/images.jpeg",
+    imagePath: "/images/Energy_Dashboard_2x.jpg.png",
     liveLink: "#",
     githubLink: "#",
     categories: ["Development", "Solar", "Design"],
@@ -51,8 +51,7 @@ export const projectsData: Project[] = [
     title: "Custom Laravel/React CRM",
     description:
       "Full-stack development of a custom Customer Relationship Management platform tailored for a small business, improving sales tracking by 40%.",
-    imagePath:
-      "./images/freecodecamp-boolfalse-laravel-react-vite-draggable-tasklist.png",
+    imagePath: "/images/freecodecamp-boolfalse-laravel-react-vite-draggable-tasklist.png",
     liveLink: "#",
     githubLink: "#",
     categories: ["Development"],
