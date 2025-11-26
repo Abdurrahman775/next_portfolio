@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
     title: "Custom Laravel/React CRM",
     description:
       "Full-stack development of a custom Customer Relationship Management platform tailored for a small business, improving sales tracking by 40%.",
-    imagePath: "/images/freecodecamp-boolfalse-laravel-react-vite-draggable-tasklist.png",
+    imagePath: "/images/freecodecamp-boolfalse-laravel-react-vite-draggable-tasklist.jpg",
     liveLink: "#",
     githubLink: "#",
     categories: ["Development"],

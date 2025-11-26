@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import FeaturedProjects from '@/components/FeaturedProjects';
+import TypewriterText from '@/components/TypewriterText';
 import {
   Code,
   Brush,
@@ -125,7 +126,7 @@ export default function Home() {
             animate="visible"
           >
             <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
-              Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Abdurrahman Alhassan</span>
+              Hello, I'm <TypewriterText text="Abdurrahman Alhassan" className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400" />
             </motion.h1>
             <motion.p variants={itemVariants} className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-200 mb-6">
               Architecting Solutions Across Digital & Physical Realms.
