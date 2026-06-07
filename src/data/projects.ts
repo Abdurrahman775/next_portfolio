@@ -1,11 +1,11 @@
 // data/projects.ts
-export type ProjectCategory = "Development" | "Design" | "Networking" | "Solar";
+export type ProjectCategory = "Development" | "Design" | "Networking" | "Security" | "AI";
 
 export interface Project {
   id: number;
   title: string;
   description: string;
-  imagePath: string; // Path to image in /public
+  imagePath: string;
   liveLink: string;
   githubLink: string;
   categories: ProjectCategory[];
@@ -17,44 +17,44 @@ export const projectsData: Project[] = [
     id: 1,
     title: "Eco-Synapse Smart Grid Dashboard",
     description:
-      "A real-time data visualization dashboard for residential solar PV systems, built for efficiency monitoring and predictive maintenance.",
+      "Real-time monitoring dashboard for residential solar PV systems. Tracks energy output, flags anomalies, and surfaces predictive maintenance alerts — reducing manual inspection time by over 60%.",
     imagePath: "/images/Energy_Dashboard_2x.jpg.png",
     liveLink: "#",
     githubLink: "#",
-    categories: ["Development", "Solar", "Design"],
+    categories: ["Development", "Design"],
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Figma"],
   },
   {
     id: 2,
-    title: "Enterprise VPN Mesh Configuration",
+    title: "Enterprise VPN Mesh Network",
     description:
-      "Designed and implemented a secure, fault-tolerant VPN mesh network connecting three global offices using Cisco ASA and EIGRP routing.",
+      "Designed and deployed a secure, fault-tolerant VPN mesh connecting three global offices. Achieved zero-downtime failover using EIGRP routing with full IPsec encryption across all tunnels.",
     imagePath: "/images/images.jpeg",
     liveLink: "#",
     githubLink: "#",
-    categories: ["Networking"],
+    categories: ["Networking", "Security"],
     techStack: ["Cisco ASA", "EIGRP", "IPsec VPN", "Wireshark", "Python"],
   },
   {
     id: 3,
-    title: "Modern Portfolio Redesign (UI/UX)",
+    title: "Draggable Task Manager (Laravel + React)",
     description:
-      "Complete visual identity and interaction design system overhaul for a creative agency, focusing on accessibility and modern micro-interactions.",
-    imagePath: "/images/hq720.jpg",
-    liveLink: "#",
-    githubLink: "#",
-    categories: ["Design", "Development"],
-    techStack: ["Figma", "Sketch", "A/B Testing", "Storybook", "Sass"],
-  },
-  {
-    id: 4,
-    title: "Custom Laravel/React CRM",
-    description:
-      "Full-stack development of a custom Customer Relationship Management platform tailored for a small business, improving sales tracking by 40%.",
+      "Full-stack task management app with drag-and-drop Kanban boards, real-time updates, and role-based access control. Built to handle multi-user workspaces with a REST API backend.",
     imagePath: "/images/freecodecamp-boolfalse-laravel-react-vite-draggable-tasklist.jpg",
     liveLink: "#",
     githubLink: "#",
     categories: ["Development"],
-    techStack: ["Laravel", "React", "REST API", "MySQL", "Docker"],
+    techStack: ["Laravel", "React", "Vite", "REST API", "MySQL"],
+  },
+  {
+    id: 4,
+    title: "Custom CRM Platform",
+    description:
+      "Built a tailored Customer Relationship Management system for a small business, consolidating lead tracking, pipeline management, and reporting into one platform. Improved sales tracking efficiency by 40%.",
+    imagePath: "/images/Energy_Dashboard_2x.jpg.png",
+    liveLink: "#",
+    githubLink: "#",
+    categories: ["Development"],
+    techStack: ["PHP", "React", "PostgreSQL", "Tailwind CSS", "Docker"],
   },
 ];

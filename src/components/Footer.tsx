@@ -3,11 +3,13 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react'; // Social media icons
+import { Github, Linkedin, Mail, Twitter, Instagram } from 'lucide-react';
 
 const socialLinks = [
   { href: 'https://github.com/Abdurrahman775', icon: Github, label: 'GitHub' },
-  { href: 'www.linkedin.com/in/abdurrahman-alhassan-04b271318', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/abdurrahman-alhassan-04b271318/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://x.com/abdur_dev', icon: Twitter, label: 'X (Twitter)' },
+  { href: 'https://www.instagram.com/ibn___alhassan/', icon: Instagram, label: 'Instagram' },
   { href: 'mailto:abdurrahmanalhassan775@gmail.com', icon: Mail, label: 'Email' },
 ];
 

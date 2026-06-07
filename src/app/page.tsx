@@ -52,39 +52,39 @@ const textRevealVariants = {
 
 const skillRoles = [
   'Full-Stack Developer',
-  'UI/UX Designer',
-  'Network Engineer',
-  'Solar Solutions Specialist',
+  'AI Engineer',
+  'Backend Engineer',
+  'Security Engineer',
 ];
 
 const nexusSkills = [
   {
-    id: 'code',
+    id: 'fullstack',
     icon: Code,
-    title: 'Code',
-    tagline: 'Architecting robust digital foundations.',
+    title: 'Full-Stack',
+    tagline: 'End-to-end web applications with React, Node.js & PHP.',
     link: '/projects?category=development',
   },
   {
-    id: 'design',
+    id: 'ai',
     icon: Brush,
-    title: 'Design',
-    tagline: 'Crafting intuitive and engaging experiences.',
-    link: '/projects?category=design',
+    title: 'AI Systems',
+    tagline: 'Intelligent tools, automation pipelines & trading bots.',
+    link: '/projects?category=ai',
   },
   {
-    id: 'connect',
-    icon: GitPullRequest, // Or Network, Cloud icons
-    title: 'Connect',
-    tagline: 'Building reliable and secure infrastructures.',
-    link: '/projects?category=networking',
+    id: 'backend',
+    icon: GitPullRequest,
+    title: 'Backend',
+    tagline: 'Scalable APIs, databases & secure server architecture.',
+    link: '/projects?category=backend',
   },
   {
-    id: 'power',
+    id: 'security',
     icon: Sun,
-    title: 'Power',
-    tagline: 'Harnessing sustainable energy solutions.',
-    link: '/projects?category=solar',
+    title: 'Security',
+    tagline: 'Security-focused engineering & infrastructure hardening.',
+    link: '/projects?category=security',
   },
 ];
 
@@ -126,10 +126,13 @@ export default function Home() {
             animate="visible"
           >
             <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
-              Hello, I'm <TypewriterText text="Abdurrahman Alhassan" className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400" />
+              I'm <TypewriterText text="Abdurrahman Alhassan" className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400" />
             </motion.h1>
             <motion.p variants={itemVariants} className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-200 mb-6">
-              Architecting Solutions Across Digital & Physical Realms.
+              Full-Stack Developer & AI Engineer
+            </motion.p>
+            <motion.p variants={itemVariants} className="text-base sm:text-lg text-gray-400 mb-6 max-w-xl">
+              I build scalable web applications, backend systems, and AI-powered tools using React, Python, Node.js, PHP & PostgreSQL.
             </motion.p>
             
             {/* Dynamic Role Showcase */}
@@ -254,10 +257,47 @@ export default function Home() {
         </div>
       </section>
 
-     {/* Placeholder for Featured Projects Section */}
-<section className="py-20 bg-gray-950">
-   <FeaturedProjects />
-</section>
+      {/* Currently Building */}
+      <section className="py-16 bg-gray-900 border-t border-gray-800">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="flex flex-col md:flex-row items-start md:items-center gap-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="flex-shrink-0">
+              <span className="flex items-center gap-2 text-sm font-semibold text-indigo-400 uppercase tracking-widest mb-1">
+                <span className="inline-block w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
+                Currently Building
+              </span>
+              <p className="text-gray-500 text-sm">Active projects & experiments</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { label: 'AI Trading Bot', tech: 'Python · Node.js' },
+                { label: 'LMS Platform', tech: 'React · PHP · PostgreSQL' },
+                { label: 'Backend API Framework', tech: 'Node.js · REST' },
+                { label: 'Security Audit Tooling', tech: 'Python · Bash' },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg"
+                >
+                  <p className="text-white font-medium text-sm">{item.label}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{item.tech}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="py-20 bg-gray-950">
+        <FeaturedProjects />
+      </section>
     </main>
   );
 }
