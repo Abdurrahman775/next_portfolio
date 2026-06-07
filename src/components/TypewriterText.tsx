@@ -2,7 +2,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 
 interface TypewriterTextProps {
   text: string;
@@ -55,15 +55,7 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
   return (
     <span ref={ref} className={`inline-flex items-center ${className}`}>
       {displayText}
-      <motion.span
-        className={`inline-block w-[2px] h-[1em] ml-1 ${cursorColor}`}
-        animate={{ opacity: [1, 0] }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          ease: 'linear',
-        }}
-      />
+      <span className={`cursor-blink inline-block w-[2px] h-[1em] ml-1 ${cursorColor}`} />
     </span>
   );
 };

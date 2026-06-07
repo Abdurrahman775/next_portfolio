@@ -4,8 +4,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import FeaturedProjects from '@/components/FeaturedProjects';
+import dynamic from 'next/dynamic';
 import TypewriterText from '@/components/TypewriterText';
+
+const FeaturedProjects = dynamic(() => import('@/components/FeaturedProjects'));
 import {
   Code,
   Brush,
@@ -103,18 +105,8 @@ export default function Home() {
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-fuchsia-900 mix-blend-lighten opacity-30"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.5 }}
-            transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-          />
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-tl from-sky-900 via-cyan-900 to-green-900 mix-blend-lighten opacity-30"
-            initial={{ opacity: 0.5 }}
-            animate={{ opacity: 0 }}
-            transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse', delay: 2.5 }}
-          />
+          <div className="hero-gradient-1 absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-fuchsia-900 mix-blend-lighten" />
+          <div className="hero-gradient-2 absolute inset-0 bg-gradient-to-tl from-sky-900 via-cyan-900 to-green-900 mix-blend-lighten" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 text-center md:text-left">
@@ -191,29 +183,15 @@ export default function Home() {
           >
             <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-indigo-700 to-purple-700 border-4 border-white/20">
               <Image
-                src="/Abdurrahman.jpg" // Ensure this image is in your /public folder
+                src="/Abdurrahman.jpg"
                 alt="Professional Profile Photo of Abdurrahman Alhassan"
                 fill
                 style={{ objectFit: 'cover' }}
-                priority // Preload the image for better performance
+                priority
+                sizes="(max-width: 768px) 288px, 320px"
                 className="z-10"
               />
-              {/* Pulsating Glow Effect */}
-              <motion.div
-                className="absolute inset-0 rounded-full"
-                animate={{
-                  boxShadow: [
-                    '0 0 0px rgba(139, 92, 246, 0.4)',
-                    '0 0 20px rgba(139, 92, 246, 0.7)',
-                    '0 0 0px rgba(139, 92, 246, 0.4)',
-                  ],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-              />
+              <div className="profile-glow absolute inset-0 rounded-full" />
             </div>
           </motion.div>
         </div>

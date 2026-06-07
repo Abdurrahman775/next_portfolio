@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes gradientPulse1 {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes gradientPulse2 {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0; }
+}
+
+@keyframes profileGlow {
+  0%, 100% { box-shadow: 0 0 0px rgba(139, 92, 246, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.7); }
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hero-gradient-1 {
+  animation: gradientPulse1 5s ease-in-out infinite;
+}
+
+.hero-gradient-2 {
+  animation: gradientPulse2 5s ease-in-out infinite 2.5s;
+}
+
+.profile-glow {
+  animation: profileGlow 4s ease-in-out infinite;
+}
+
+.cursor-blink {
+  animation: cursorBlink 0.8s linear infinite;
+}
