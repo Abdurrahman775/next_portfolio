@@ -55,7 +55,7 @@ const textRevealVariants = {
 const skillRoles = [
   'Full-Stack Developer',
   'Web & Mobile Engineer',
-  'Backend Developer',
+  'Network & Solar Technician',
   'Open to Remote Work',
 ];
 

@@ -37,10 +37,10 @@ const timelineEvents = [
   },
   {
     year: 2023,
-    title: 'Backend & API Development',
-    description: 'Deepened expertise in backend architecture — RESTful APIs, MySQL database design, authentication systems, and server-side PHP development.',
+    title: 'Networking, Solar & CCTV Installation',
+    description: 'Working as a field technician — network infrastructure setup, solar PV system installation, and CCTV surveillance system deployment. Hands-on experience bridging physical and digital infrastructure.',
     icon: Server,
-    category: 'Backend',
+    category: 'Infrastructure',
     color: 'border-green-500',
   },
   {
@@ -73,8 +73,8 @@ const skillCategories = [
     color: 'text-purple-400',
   },
   {
-    title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'Vercel', 'VS Code', 'Postman', 'Paystack'],
+    title: 'Infrastructure',
+    skills: ['Network Setup', 'LAN/WAN', 'Solar PV Installation', 'CCTV Installation', 'IP Cameras', 'Cable Management'],
     icon: Database,
     color: 'text-green-400',
   },
@@ -129,9 +129,10 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a self-taught full-stack developer from Nigeria, building web and mobile products from the ground up.
-            I started with the basics and worked my way up to shipping real products — LMS platforms, fintech apps,
-            client portals, and mobile applications. I care about writing clean code that actually works in production.
+            I'm a self-taught full-stack developer and field technician from Nigeria. On the software side, I build
+            web and mobile products — LMS platforms, fintech apps, client portals, and Flutter mobile apps.
+            On the physical side, I work in network infrastructure, solar PV installation, and CCTV surveillance systems.
+            I bridge both worlds: I can spec the software and wire up the hardware.
           </p>
         </motion.header>
 
