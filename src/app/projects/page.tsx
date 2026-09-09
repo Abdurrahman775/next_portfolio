@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from '@/components/ProjectCard';
 import { projectsData, ProjectCategory } from '@/data/projects';
 
-const allCategories: ProjectCategory[] = ['Development', 'Design', 'Networking', 'Security', 'AI'];
+const allCategories: ProjectCategory[] = ['Development', 'Mobile', 'Fintech', 'Education', 'Tools'];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          A selection of projects across full-stack development, AI systems, networking, and security engineering.
+          A selection of projects across full-stack web, mobile, fintech, and education platforms.
         </motion.p>
 
         {/* Filter Buttons */}
