@@ -8,36 +8,34 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Abdurrahman Alhassan | Full-Stack Developer & AI Engineer',
+  title: 'Abdurrahman Alhassan | Full-Stack Developer',
   description:
-    'Full-Stack Developer and AI Engineer specializing in React, Python, Node.js, PHP, and PostgreSQL. Building scalable web applications, backend systems, and AI-powered tools.',
+    'Full-Stack Developer from Nigeria specializing in Next.js, Flutter, PHP, and Python. Building web and mobile products — LMS platforms, fintech apps, client portals, and more.',
   keywords: [
     'Full-Stack Developer',
-    'AI Engineer',
-    'Software Engineer',
-    'Backend Engineer',
-    'React Developer',
-    'Node.js',
-    'Python',
-    'PHP',
-    'PostgreSQL',
+    'Next.js Developer',
+    'Flutter Developer',
+    'PHP Developer',
+    'Web Developer Nigeria',
+    'Remote Developer',
+    'Mobile App Developer',
     'Abdurrahman Alhassan',
+    'LunoByte',
   ],
   authors: [{ name: 'Abdurrahman Alhassan', url: 'https://abdurrahman775.vercel.app' }],
   openGraph: {
-    title: 'Abdurrahman Alhassan | Full-Stack Developer & AI Engineer',
+    title: 'Abdurrahman Alhassan | Full-Stack Developer',
     description:
-      'Building scalable web applications, backend systems, and AI-powered tools with React, Python, Node.js & PHP.',
+      'Building web and mobile products with Next.js, Flutter, PHP & Python. Available for remote work.',
     url: 'https://abdurrahman775.vercel.app',
     siteName: 'Abdurrahman Alhassan',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Abdurrahman Alhassan | Full-Stack Developer & AI Engineer',
+    title: 'Abdurrahman Alhassan | Full-Stack Developer',
     description:
-      'Building scalable web apps, backend systems, and AI-powered tools with React, Python & Node.js.',
-    creator: '@abdur_dev',
+      'Building web and mobile products with Next.js, Flutter & PHP. Available for remote work.',
   },
 };
 

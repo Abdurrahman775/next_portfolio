@@ -1,84 +1,81 @@
-// app/about/page.tsx
 'use client';
 
 import { motion } from 'framer-motion';
 import {
   Code,
-  Brush,
-  Zap, // Electrical/Energy
-  Server, // Networking
+  Smartphone,
+  Server,
+  Database,
   Briefcase,
-  Star,
+  GraduationCap,
 } from 'lucide-react';
 
-// Define your career timeline events
 const timelineEvents = [
   {
-    year: 2023,
-    title: 'Pioneered Smart Grid Dashboard',
-    description: 'Led full-stack development of a Next.js/TypeScript dashboard integrating real-time solar data via REST APIs.',
-    icon: Code,
-    category: 'Development',
+    year: 2026,
+    title: 'Building LunoByte — Software Agency',
+    description: 'Founder of LunoByte, delivering web and mobile products for clients. Currently building the VTU platform (Next.js + Flutter monorepo) and other client projects.',
+    icon: Briefcase,
+    category: 'Entrepreneurship',
     color: 'border-indigo-500',
   },
   {
-    year: 2022,
-    title: 'Certified Solar PV Installer',
-    description: 'Completed certification and began executing residential and light commercial solar installation and design projects.',
-    icon: Zap,
-    category: 'Solar',
+    year: 2025,
+    title: 'Full-Stack Development — Advanced Projects',
+    description: 'Built and deployed multiple production-ready applications including an LMS, CBT platform, client portal, and employee management system.',
+    icon: Code,
+    category: 'Development',
+    color: 'border-purple-500',
+  },
+  {
+    year: 2024,
+    title: 'Mobile Development with Flutter',
+    description: 'Expanded into cross-platform mobile development, building Flutter apps alongside existing web projects. Integrated payment APIs (Paystack) into real fintech products.',
+    icon: Smartphone,
+    category: 'Mobile',
+    color: 'border-cyan-500',
+  },
+  {
+    year: 2023,
+    title: 'Backend & API Development',
+    description: 'Deepened expertise in backend architecture — RESTful APIs, MySQL database design, authentication systems, and server-side PHP development.',
+    icon: Server,
+    category: 'Backend',
     color: 'border-green-500',
   },
   {
     year: 2020,
-    title: 'Senior UI/UX Designer Role',
-    description: 'Transitioned to focusing on user-centered design, prototyping, and accessibility standards (WCAG) for enterprise applications.',
-    icon: Brush,
-    category: 'Design',
-    color: 'border-purple-500',
-  },
-  {
-    year: 2018,
-    title: 'Network Infrastructure Consultant',
-    description: 'Designed and secured complex VPN and LAN architectures for medium-sized firms, specializing in Cisco and Juniper hardware.',
-    icon: Server,
-    category: 'Networking',
-    color: 'border-cyan-500',
-  },
-  {
-    year: 2016,
-    title: 'Began Full-Stack Development Career',
-    description: 'First professional role focusing on Python/Django and MySQL backends, establishing core programming principles.',
-    icon: Briefcase,
-    category: 'Development',
-    color: 'border-indigo-500',
+    title: 'Started Learning Web Development',
+    description: 'Began the journey with HTML, CSS, and JavaScript fundamentals. Built first projects and progressively moved into PHP, MySQL, and modern JavaScript frameworks.',
+    icon: GraduationCap,
+    category: 'Learning',
+    color: 'border-yellow-500',
   },
 ];
 
-// Define your skills in categories
 const skillCategories = [
   {
-    title: 'Full-Stack Development',
-    skills: ['Next.js', 'TypeScript', 'React', 'Node.js', 'Python/Django', 'PostgreSQL', 'Docker'],
+    title: 'Frontend',
+    skills: ['Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'],
     icon: Code,
     color: 'text-indigo-400',
   },
   {
-    title: 'UI/UX & Design',
-    skills: ['Figma', 'Prototyping', 'User Research', 'Tailwind CSS', 'A/B Testing', 'Design Systems'],
-    icon: Brush,
-    color: 'text-purple-400',
-  },
-  {
-    title: 'Networking & Infrastructure',
-    skills: ['Cisco/Juniper', 'VPN (IPsec/SSL)', 'Firewall Configuration', 'Cloud Networking (AWS/Azure)', 'Linux'],
-    icon: Server,
+    title: 'Mobile',
+    skills: ['Flutter', 'Dart'],
+    icon: Smartphone,
     color: 'text-cyan-400',
   },
   {
-    title: 'Solar & Energy',
-    skills: ['PV System Design', 'Installation', 'Energy Audits', 'NABCEP Standards', 'Monitoring Software'],
-    icon: Zap,
+    title: 'Backend',
+    skills: ['PHP', 'Python', 'Node.js', 'REST APIs', 'MySQL', 'PostgreSQL', 'Firebase'],
+    icon: Server,
+    color: 'text-purple-400',
+  },
+  {
+    title: 'Tools & Platforms',
+    skills: ['Git', 'GitHub', 'Vercel', 'VS Code', 'Postman', 'Paystack'],
+    icon: Database,
     color: 'text-green-400',
   },
 ];
@@ -104,12 +101,10 @@ const TimelineItem: React.FC<typeof timelineEvents[0] & { index: number }> = ({
     >
       <div className="order-1 w-5/12 hidden md:block" />
 
-      {/* Circle Icon Separator */}
       <div className="z-10 flex items-center order-1 bg-gray-950 shadow-xl w-12 h-12 rounded-full ring-4 ring-gray-900 justify-center">
         <Icon className={`w-6 h-6 ${color.replace('border-', 'text-')}`} />
       </div>
 
-      {/* Content Card */}
       <div className={`order-1 ${isOdd ? 'md:mr-10' : 'md:ml-10'} w-full md:w-5/12 px-6 py-4 rounded-lg shadow-lg bg-gray-800/70 border-t-4 ${color}`}>
         <h3 className="text-sm font-light text-gray-400 mb-1">{year} | {category}</h3>
         <h4 className="mb-2 font-bold text-xl text-white">{title}</h4>
@@ -131,18 +126,19 @@ export default function AboutPage() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-4">
-            The Journey of an Innovator
+            About Me
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            My career is defined by seamlessly integrating **digital innovation** with **practical infrastructure**. I don't just write code—I build, connect, and power systems from the wire to the web.
+            I'm a self-taught full-stack developer from Nigeria, building web and mobile products from the ground up.
+            I started with the basics and worked my way up to shipping real products — LMS platforms, fintech apps,
+            client portals, and mobile applications. I care about writing clean code that actually works in production.
           </p>
         </motion.header>
 
-        {/* Interactive Timeline */}
+        {/* Timeline */}
         <section className="relative wrap overflow-hidden p-10 h-full">
-          <h2 className="text-3xl font-bold text-white mb-16 text-center">Career Milestones</h2>
-          
-          {/* Vertical Separator Line */}
+          <h2 className="text-3xl font-bold text-white mb-16 text-center">My Journey</h2>
+
           <div className="hidden md:block absolute h-full border border-indigo-500 left-1/2 transform -translate-x-1/2 border-opacity-70" />
 
           {timelineEvents.map((event, index) => (
@@ -152,7 +148,7 @@ export default function AboutPage() {
 
         {/* Skill Matrix */}
         <section className="py-16 mt-16 border-t border-gray-800">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">My Integrated Skill Stack</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Tech Stack</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {skillCategories.map((category, index) => (
               <motion.div
@@ -175,6 +171,21 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 text-center border-t border-gray-800">
+          <h2 className="text-3xl font-bold text-white mb-4">Open to Remote Work</h2>
+          <p className="text-gray-400 mb-8 max-w-xl mx-auto">
+            I'm actively looking for remote full-stack roles and freelance projects. If you need someone who can ship,
+            let's talk.
+          </p>
+          <a
+            href="mailto:abdurrahmanalhassan775@gmail.com"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-full hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg"
+          >
+            Get in Touch
+          </a>
         </section>
       </div>
     </main>

@@ -54,39 +54,39 @@ const textRevealVariants = {
 
 const skillRoles = [
   'Full-Stack Developer',
-  'AI Engineer',
-  'Backend Engineer',
-  'Security Engineer',
+  'Web & Mobile Engineer',
+  'Backend Developer',
+  'Open to Remote Work',
 ];
 
 const nexusSkills = [
   {
     id: 'fullstack',
     icon: Code,
-    title: 'Full-Stack',
-    tagline: 'End-to-end web applications with React, Node.js & PHP.',
+    title: 'Full-Stack Web',
+    tagline: 'End-to-end web applications with Next.js, React & PHP.',
     link: '/projects?category=development',
   },
   {
-    id: 'ai',
+    id: 'mobile',
     icon: Brush,
-    title: 'AI Systems',
-    tagline: 'Intelligent tools, automation pipelines & trading bots.',
-    link: '/projects?category=ai',
+    title: 'Mobile Apps',
+    tagline: 'Cross-platform mobile apps with Flutter & Dart.',
+    link: '/projects?category=mobile',
   },
   {
     id: 'backend',
     icon: GitPullRequest,
-    title: 'Backend',
-    tagline: 'Scalable APIs, databases & secure server architecture.',
+    title: 'Backend & APIs',
+    tagline: 'Scalable REST APIs, databases & server architecture.',
     link: '/projects?category=backend',
   },
   {
-    id: 'security',
+    id: 'fintech',
     icon: Sun,
-    title: 'Security',
-    tagline: 'Security-focused engineering & infrastructure hardening.',
-    link: '/projects?category=security',
+    title: 'Fintech Products',
+    tagline: 'Payment integrations, wallets & VTU platforms.',
+    link: '/projects?category=fintech',
   },
 ];
 
@@ -121,10 +121,10 @@ export default function Home() {
               I'm <TypewriterText text="Abdurrahman Alhassan" className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400" />
             </motion.h1>
             <motion.p variants={itemVariants} className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-200 mb-6">
-              Full-Stack Developer & AI Engineer
+              Full-Stack Developer
             </motion.p>
             <motion.p variants={itemVariants} className="text-base sm:text-lg text-gray-400 mb-6 max-w-xl">
-              I build scalable web applications, backend systems, and AI-powered tools using React, Python, Node.js, PHP & PostgreSQL.
+              I build web and mobile products end-to-end — from clean front-end interfaces to reliable back-end APIs. Next.js, Flutter, PHP, and Python are my daily tools.
             </motion.p>
             
             {/* Dynamic Role Showcase */}
@@ -254,10 +254,10 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: 'AI Trading Bot', tech: 'Python · Node.js' },
-                { label: 'LMS Platform', tech: 'React · PHP · PostgreSQL' },
-                { label: 'Backend API Framework', tech: 'Node.js · REST' },
-                { label: 'Security Audit Tooling', tech: 'Python · Bash' },
+                { label: 'VTU App', tech: 'Next.js · Flutter · Paystack' },
+                { label: 'LMS Platform', tech: 'PHP · MySQL · Bootstrap' },
+                { label: 'Client Portal', tech: 'PHP · REST API' },
+                { label: 'Portfolio Site', tech: 'Next.js · TypeScript · Tailwind' },
               ].map((item) => (
                 <div
                   key={item.label}
