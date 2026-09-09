@@ -13,10 +13,10 @@ import {
 const timelineEvents = [
   {
     year: 2026,
-    title: 'Building LunoByte — Software Agency',
-    description: 'Founder of LunoByte, delivering web and mobile products for clients. Currently building the VTU platform (Next.js + Flutter monorepo) and other client projects.',
+    title: 'CTO at LunoByte — Software Agency',
+    description: 'Chief Technology Officer at LunoByte, leading technical delivery of web and mobile products for clients. Currently building the VTU platform (Next.js + Flutter monorepo) and other client projects.',
     icon: Briefcase,
-    category: 'Entrepreneurship',
+    category: 'Technology Leadership',
     color: 'border-indigo-500',
   },
   {
@@ -129,10 +129,10 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a self-taught full-stack developer and field technician from Nigeria. On the software side, I build
-            web and mobile products — LMS platforms, fintech apps, client portals, and Flutter mobile apps.
-            On the physical side, I work in network infrastructure, solar PV installation, and CCTV surveillance systems.
-            I bridge both worlds: I can spec the software and wire up the hardware.
+            I'm a full-stack developer and computer engineering student from Nigeria. On the software side, I serve
+            as CTO at LunoByte — building web and mobile products: LMS platforms, fintech apps, client portals,
+            and Flutter mobile apps. On the physical side, I work in network infrastructure, solar PV installation,
+            and CCTV surveillance systems. I bridge both worlds: I can spec the software and wire up the hardware.
           </p>
         </motion.header>
 
