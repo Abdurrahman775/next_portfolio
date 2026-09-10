@@ -78,4 +78,15 @@ export const projectsData: Project[] = [
     categories: ["Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
   },
+  {
+    id: 7,
+    title: "Northland School Management System",
+    description:
+      "Multi-role school management platform built for Northland Schools, Kano. Covers student registration, teacher management, timetable generation, results processing, attendance, and a full finance module with fee collection, expense approval, and receipt generation.",
+    imagePath: "/images/nskn.png",
+    liveLink: "#",
+    githubLink: "https://github.com/Abdurrahman775/nskn",
+    categories: ["Education", "Development"],
+    techStack: ["PHP", "MySQL", "JavaScript", "Tailwind CSS", "PhpSpreadsheet"],
+  },
 ];
