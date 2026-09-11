@@ -29,7 +29,7 @@ export const projectsData: Project[] = [
     description:
       "Web tool that generates structured product requirement documents and pricing strategy recommendations. Helps founders and product teams go from idea to actionable spec faster.",
     imagePath: "/images/pricing-tool.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/pricing-tool",
     githubLink: "https://github.com/Abdurrahman775/pricing-tool",
     categories: ["Tools"],
     techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
@@ -40,7 +40,7 @@ export const projectsData: Project[] = [
     description:
       "Full-featured LMS with course creation, student enrollment, quiz management, and progress tracking. Designed for schools and training organisations managing multiple instructors and learners.",
     imagePath: "/images/edulearn.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/edulearn",
     githubLink: "https://github.com/Abdurrahman775/edulearn-lms",
     categories: ["Education", "Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
     description:
       "Agency-client collaboration platform with project tracking, milestone updates, file sharing, and invoicing. Keeps clients informed and agencies organised without back-and-forth emails.",
     imagePath: "/images/client-portal.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/client-portal/login.php",
     githubLink: "https://github.com/Abdurrahman775/client-portal",
     categories: ["Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "CSS"],
@@ -62,7 +62,7 @@ export const projectsData: Project[] = [
     description:
       "Computer-based testing system supporting multiple subjects, timed assessments, randomised questions, and instant result calculation. Used for academic and professional examination scenarios.",
     imagePath: "/images/cbt.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/cbt",
     githubLink: "https://github.com/Abdurrahman775/chprbn-cbt",
     categories: ["Education", "Development"],
     techStack: ["JavaScript", "PHP", "MySQL", "HTML", "CSS"],
@@ -73,7 +73,7 @@ export const projectsData: Project[] = [
     description:
       "HR dashboard for managing staff records, attendance tracking, leave requests, and basic payroll summaries. Simplifies people operations for small and medium businesses.",
     imagePath: "/images/employee-mgmt.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/employee-mgmt",
     githubLink: "https://github.com/Abdurrahman775/employee-mgmt",
     categories: ["Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
@@ -84,7 +84,7 @@ export const projectsData: Project[] = [
     description:
       "Multi-role school management platform built for Northland Schools, Kano. Covers student registration, teacher management, timetable generation, results processing, attendance, and a full finance module with fee collection, expense approval, and receipt generation.",
     imagePath: "/images/nskn.png",
-    liveLink: "#",
+    liveLink: "http://ab-dev.infinityfree.me/nskn",
     githubLink: "https://github.com/Abdurrahman775/nskn",
     categories: ["Education", "Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Tailwind CSS", "PhpSpreadsheet"],
