@@ -148,7 +148,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-white mb-4">Social Links</h3>
                 <div className="flex space-x-6">
                     <SocialIcon link="https://github.com/Abdurrahman775" icon={Github} label="GitHub" />
-                    <SocialIcon link="www.linkedin.com/in/abdurrahman-alhassan-04b271318" icon={Linkedin} label="LinkedIn" />
+                    <SocialIcon link="https://www.linkedin.com/in/abdurrahman-alhassan" icon={Linkedin} label="LinkedIn" />
                 </div>
             </div>
           </motion.div>
