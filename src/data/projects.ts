@@ -1,14 +1,23 @@
-export type ProjectCategory = "Development" | "Mobile" | "Fintech" | "Education" | "Tools";
+export type ProjectCategory = "Development" | "Mobile" | "Fintech" | "Education" | "Tools" | "On-site";
+
+export interface GalleryItem {
+  type: "image" | "video";
+  src: string;
+  caption?: string;
+}
 
 export interface Project {
   id: number;
   title: string;
   description: string;
   imagePath: string;
-  liveLink: string;
+  liveLink?: string;
   githubLink: string;
   categories: ProjectCategory[];
   techStack: string[];
+  featuredOnly?: boolean; // if false, only show in /projects, not on homepage
+  isGallery?: boolean;    // show "View Gallery" instead of "View Live"
+  gallery?: GalleryItem[];
 }
 
 export const projectsData: Project[] = [
@@ -18,24 +27,12 @@ export const projectsData: Project[] = [
     description:
       "Wallet-based VTU reselling platform supporting airtime top-up, data bundles, and cable TV subscriptions. Built as a full monorepo with a Next.js web app and a Flutter mobile client sharing a single backend API.",
     imagePath: "/images/vtu-app.png",
-    liveLink: "#",
     githubLink: "https://github.com/Abdurrahman775/vtu-app",
     categories: ["Fintech", "Mobile"],
     techStack: ["Next.js", "TypeScript", "Flutter", "Dart", "Node.js", "PostgreSQL", "Paystack"],
   },
   {
     id: 2,
-    title: "Pricing & PRD Generator Tool",
-    description:
-      "Web tool that generates structured product requirement documents and pricing strategy recommendations. Helps founders and product teams go from idea to actionable spec faster.",
-    imagePath: "/images/pricing-tool.png",
-    liveLink: "http://ab-dev.infinityfree.me/pricing-tool",
-    githubLink: "https://github.com/Abdurrahman775/pricing-tool",
-    categories: ["Tools"],
-    techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    id: 3,
     title: "EduLearn — Learning Management System",
     description:
       "Full-featured LMS with course creation, student enrollment, quiz management, and progress tracking. Designed for schools and training organisations managing multiple instructors and learners.",
@@ -43,6 +40,17 @@ export const projectsData: Project[] = [
     liveLink: "http://ab-dev.infinityfree.me/edulearn",
     githubLink: "https://github.com/Abdurrahman775/edulearn-lms",
     categories: ["Education", "Development"],
+    techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+  },
+  {
+    id: 3,
+    title: "Employee Management System",
+    description:
+      "HR dashboard for managing staff records, attendance tracking, leave requests, and basic payroll summaries. Simplifies people operations for small and medium businesses.",
+    imagePath: "/images/employee-mgmt.png",
+    liveLink: "http://ab-dev.infinityfree.me/employee-mgmt",
+    githubLink: "https://github.com/Abdurrahman775/employee-mgmt",
+    categories: ["Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
   },
   {
@@ -69,17 +77,6 @@ export const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "Employee Management System",
-    description:
-      "HR dashboard for managing staff records, attendance tracking, leave requests, and basic payroll summaries. Simplifies people operations for small and medium businesses.",
-    imagePath: "/images/employee-mgmt.png",
-    liveLink: "http://ab-dev.infinityfree.me/employee-mgmt",
-    githubLink: "https://github.com/Abdurrahman775/employee-mgmt",
-    categories: ["Development"],
-    techStack: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-  },
-  {
-    id: 7,
     title: "Northland School Management System",
     description:
       "Multi-role school management platform built for Northland Schools, Kano. Covers student registration, teacher management, timetable generation, results processing, attendance, and a full finance module with fee collection, expense approval, and receipt generation.",
@@ -88,5 +85,47 @@ export const projectsData: Project[] = [
     githubLink: "https://github.com/Abdurrahman775/nskn",
     categories: ["Education", "Development"],
     techStack: ["PHP", "MySQL", "JavaScript", "Tailwind CSS", "PhpSpreadsheet"],
+  },
+  {
+    id: 7,
+    title: "CCTV Installation — Site Work",
+    description:
+      "On-site CCTV camera installation project. Covers cable routing, camera mounting, DVR configuration, and full system testing across a multi-room facility.",
+    imagePath: "/images/cctv/cctv-1.jpg",
+    githubLink: "https://github.com/Abdurrahman775",
+    categories: ["On-site"],
+    techStack: ["CCTV", "Cable Routing", "DVR Setup", "Network Config"],
+    isGallery: true,
+    gallery: [
+      { type: "image", src: "/images/cctv/cctv-1.jpg", caption: "Installation site overview" },
+      { type: "image", src: "/images/cctv/cctv-2.jpg", caption: "Camera mounting" },
+      { type: "image", src: "/images/cctv/IMG_8861.jpg", caption: "Cable routing" },
+      { type: "image", src: "/images/cctv/IMG_8864.jpg", caption: "DVR configuration" },
+      { type: "image", src: "/images/cctv/IMG_8871.jpg", caption: "Camera positioning" },
+      { type: "image", src: "/images/cctv/IMG_8875.jpg", caption: "Site walkthrough" },
+      { type: "image", src: "/images/cctv/IMG_8877.jpg", caption: "System testing" },
+      { type: "image", src: "/images/cctv/IMG_8878.jpg", caption: "Final setup" },
+      { type: "image", src: "/images/cctv/IMG_8879.jpg", caption: "Full coverage check" },
+      { type: "image", src: "/images/cctv/IMG_8880.jpg", caption: "Equipment closeup" },
+      { type: "image", src: "/images/cctv/IMG_8881.jpg", caption: "Mounting bracket detail" },
+      { type: "image", src: "/images/cctv/IMG_8882.jpg", caption: "Completed installation" },
+      { type: "video", src: "/images/cctv/IMG_8858.mp4", caption: "Installation process" },
+      { type: "video", src: "/images/cctv/IMG_8860.mp4", caption: "Cable work" },
+      { type: "video", src: "/images/cctv/IMG_8872.mp4", caption: "Camera field of view" },
+      { type: "video", src: "/images/cctv/IMG_8876.mp4", caption: "System live test" },
+      { type: "video", src: "/images/cctv/IMG_8883.mp4", caption: "Final walkthrough" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Pricing & PRD Generator Tool",
+    description:
+      "Web tool that generates structured product requirement documents and pricing strategy recommendations. Helps founders and product teams go from idea to actionable spec faster.",
+    imagePath: "/images/pricing-tool.png",
+    liveLink: "http://ab-dev.infinityfree.me/pricing-tool",
+    githubLink: "https://github.com/Abdurrahman775/pricing-tool",
+    categories: ["Tools"],
+    techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    featuredOnly: false,
   },
 ];

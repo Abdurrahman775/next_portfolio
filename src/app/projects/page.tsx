@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from '@/components/ProjectCard';
 import { projectsData, ProjectCategory } from '@/data/projects';
 
-const allCategories: ProjectCategory[] = ['Development', 'Mobile', 'Fintech', 'Education', 'Tools'];
+const allCategories: ProjectCategory[] = ['Development', 'Mobile', 'Fintech', 'Education', 'Tools', 'On-site'];
 
 const containerVariants = {
   hidden: { opacity: 0 },

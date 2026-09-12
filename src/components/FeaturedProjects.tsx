@@ -7,8 +7,8 @@ import { ArrowRight } from 'lucide-react';
 import { projectsData } from '@/data/projects'; // Import your project data
 import ProjectCard from '@/components/ProjectCard';
 
-// Use the first 3 projects as featured
-const featuredProjects = projectsData.slice(0, 3);
+// Show first 3 projects that are not explicitly excluded from featured
+const featuredProjects = projectsData.filter((p) => p.featuredOnly !== false).slice(0, 3);
 
 const containerVariants = {
   hidden: { opacity: 0 },
