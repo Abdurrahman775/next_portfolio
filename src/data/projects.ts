@@ -88,6 +88,16 @@ export const projectsData: Project[] = [
   },
   {
     id: 7,
+    title: "Traxovia AI — Algorithmic Forex Trading Platform",
+    description:
+      "ICT-powered trading platform with a 7-gate signal filter, XGBoost AI layer, and live MT5 execution across 5 major forex pairs. Features backtesting engine, Stripe subscription billing, Telegram alerts, and a rolling drawdown circuit breaker.",
+    imagePath: "/images/traxovia.png",
+    githubLink: "https://github.com/Abdurrahman775/traxovia",
+    categories: ["Fintech", "Development"],
+    techStack: ["Python", "FastAPI", "XGBoost", "React", "Celery", "PostgreSQL", "Stripe"],
+  },
+  {
+    id: 9,
     title: "CCTV Installation — Site Work",
     description:
       "On-site CCTV camera installation project. Covers cable routing, camera mounting, DVR configuration, and full system testing across a multi-room facility.",
@@ -117,7 +127,7 @@ export const projectsData: Project[] = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "Pricing & PRD Generator Tool",
     description:
       "Web tool that generates structured product requirement documents and pricing strategy recommendations. Helps founders and product teams go from idea to actionable spec faster.",
