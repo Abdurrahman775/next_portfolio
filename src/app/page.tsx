@@ -257,7 +257,7 @@ export default function Home() {
                 { label: 'VTU App', tech: 'Next.js · Flutter · Paystack' },
                 { label: 'LMS Platform', tech: 'PHP · MySQL · Bootstrap' },
                 { label: 'Client Portal', tech: 'PHP · REST API' },
-                { label: 'Portfolio Site', tech: 'Next.js · TypeScript · Tailwind' },
+                { label: 'Traxovia AI', tech: 'Python · FastAPI · XGBoost · MT5' },
               ].map((item) => (
                 <div
                   key={item.label}
