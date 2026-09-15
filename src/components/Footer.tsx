@@ -8,7 +8,7 @@ import { Github, Linkedin, Mail, Twitter, Instagram } from 'lucide-react';
 const socialLinks = [
   { href: 'https://github.com/Abdurrahman775', icon: Github, label: 'GitHub' },
   { href: 'https://www.linkedin.com/in/abdurrahman-alhassan', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://x.com/abdur_dev', icon: Twitter, label: 'X (Twitter)' },
+  { href: 'https://x.com/Ibn__alhassan', icon: Twitter, label: 'X (Twitter)' },
   { href: 'https://www.instagram.com/ibn___alhassan/', icon: Instagram, label: 'Instagram' },
   { href: 'mailto:abdurrahmanalhassan775@gmail.com', icon: Mail, label: 'Email' },
 ];

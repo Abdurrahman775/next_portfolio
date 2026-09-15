@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -149,6 +149,8 @@ export default function ContactPage() {
                 <div className="flex space-x-6">
                     <SocialIcon link="https://github.com/Abdurrahman775" icon={Github} label="GitHub" />
                     <SocialIcon link="https://www.linkedin.com/in/abdurrahman-alhassan" icon={Linkedin} label="LinkedIn" />
+                    <SocialIcon link="https://x.com/Ibn__alhassan" icon={Twitter} label="X (Twitter)" />
+                    <SocialIcon link="https://www.instagram.com/ibn___alhassan/" icon={Instagram} label="Instagram" />
                 </div>
             </div>
           </motion.div>
