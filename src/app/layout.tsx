@@ -68,15 +68,35 @@ export default function RootLayout({
     name: 'Abdurrahman Alhassan',
     url: 'https://abdurrahman775.vercel.app',
     email: 'abdurrahmanalhassan775@gmail.com',
+    telephone: '+2348145919419',
     jobTitle: 'Full-Stack Developer',
-    description: 'Full-Stack Developer from Nigeria specializing in Next.js, Flutter, PHP, and Python.',
+    description: 'Full-Stack Developer and CTO at LunoByte with 3 years of experience building web, mobile, and AI-powered products.',
+    image: 'https://abdurrahman775.vercel.app/Abdurrahman.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Kano',
+      addressCountry: 'NG',
+    },
+    worksFor: {
+      '@type': 'Organization',
+      name: 'LunoByte',
+      url: 'https://abdurrahman775.vercel.app',
+      description: 'Software agency delivering web and mobile solutions — LMS platforms, fintech apps, school management systems, and more.',
+    },
     sameAs: [
       'https://github.com/Abdurrahman775',
       'https://www.linkedin.com/in/abdurrahman-alhassan',
       'https://x.com/Ibn__alhassan',
       'https://www.instagram.com/ibn___alhassan/',
+      'https://wa.me/2348145919419',
     ],
-    knowsAbout: ['Next.js', 'React', 'Flutter', 'PHP', 'Python', 'FastAPI', 'TypeScript', 'MySQL', 'PostgreSQL'],
+    knowsAbout: [
+      'Next.js', 'React', 'TypeScript', 'Flutter', 'Dart',
+      'PHP', 'Python', 'FastAPI', 'Node.js',
+      'MySQL', 'PostgreSQL', 'Docker', 'Redis',
+      'Machine Learning', 'XGBoost', 'Algorithmic Trading',
+      'Full-Stack Development', 'Mobile App Development',
+    ],
   };
 
   return (
